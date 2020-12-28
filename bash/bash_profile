@@ -1,0 +1,48 @@
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/user/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/user/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/user/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/user/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+#export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+alias mysql='/usr/local/mysql/bin/mysql -u root -p'
+alias ali='vim ~/.bash_profile'
+alias des='cd /Users/user/Desktop'
+alias png='python /Users/user/Desktop/myscripts/sort_png.py'
+alias aply='source ~/.bash_profile'
+alias chrome='open -a "Google Chrome"'
+alias brave='open -a "Brave Browser"'
+alias tweet='oysttyer'
+alias tw='python /Users/user/Desktop/py_wk/oysttyer.py $1'
+alias ..='cd ..'
+alias 800='python py_wk/change_img_size_800.py'
+alias sshmamisan="ssh brave-ohmura-5452@ssh-1.mc.lolipop.jp -p42640" 
+alias keygenpass='ssh-keygen -f ~/.ssh/id_rsa -p'#公開鍵のパス変更
+alias ll="ls -la"
+alias xampp='cd /Users/user/.bitnami/stackman/machines/xampp/volumes/root'
+alias vimrc='vim ~/.vimrc'
+alias amedas='open -a "Brave Browser" https://www.jma.go.jp/jp/amedas/206.html?elementCode=2'
+alias talk='python /Users/user/Desktop/py_wk/wiki_w2vec/talk_test.py'
+alias jma='python /Users/user/Desktop/myscripts/getJmaTempNow.py'
+
+#source ~/.bash_profile
+
+
+export PATH=$PATH:/usr/local/mysql/bin
+
+export PATH=/usr/local/Cellar/openssl/1.0.2t/bin:$PATH
+export PATH="/usr/local/opt/bzip2/bin:$PATH"
