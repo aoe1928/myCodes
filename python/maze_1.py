@@ -5,7 +5,7 @@ import random
 
 def main():
     # 迷路の大きさ、H Wは奇数
-    H, W = 51, 51
+    H, W = 21, 21
     maze = np.zeros((H, W), dtype='int32')
     road_list = []
     for h in range(H):
@@ -51,7 +51,7 @@ def main():
     for h in range(H):
         for w in range(W):
             if maze[h][w] == 1:
-                print('#', end='')
+                print('■', end='')
             else:
                 print(' ', end='')
             if w == W - 1:
